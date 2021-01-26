@@ -31,7 +31,7 @@ services:
       MYSQL_ROOT_PASSWORD: johnahn
       MYSQL_DATABASE: myapp
       MYSQL_PORT: 3306
-      
+       
   # mysql:
   #   build: ./mysql
   #   restart: unless-stopped
