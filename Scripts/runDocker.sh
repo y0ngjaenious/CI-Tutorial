@@ -1,7 +1,12 @@
 if [ "$DEPLOYMENT_GROUP_NAME" == "dev" ]
 then
   # Remove any anonymous volumes attached to containers
-  docker-compose -f /home/ec2-user/docker-compose.yml rm -v 
+  docker-compose -f /home/ec2-user/docker-compose.yml rm -v
+
+  mkdir frontend
+  mkdir backend
+  mkdir nginx
+  mkdir mysql
   # build images and run containers
   docker-compose -f /home/ec2-user/docker-compose.yml up --detach --renew-anon-volumes
 elif [ "$DEPLOYMENT_GROUP_NAME" == "stage" ]
