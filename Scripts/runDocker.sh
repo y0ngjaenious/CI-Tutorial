@@ -8,7 +8,7 @@ then
   mkdir nginx
   mkdir mysql
   # build images and run containers
-  docker-compose -f /home/ec2-user/docker-compose.yml up --detach --renew-anon-volumes --no-build
+  docker-compose -f /home/ec2-user/docker-compose.yml up --detach --renew-anon-volumes
 elif [ "$DEPLOYMENT_GROUP_NAME" == "stage" ]
 then
   # Remove any anonymous volumes attached to containers
