@@ -18,7 +18,7 @@ services:
     image: y0ngjaenious/docker-nginx
     ports: 
       - "3000:80"
-  
+ 
   backend:
     build: 
       dockerfile: Dockerfile.dev
