@@ -3,7 +3,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /deploy
+    destination: /home/ec2-user
 hooks:
   AfterInstall:
     - location: Scripts/pullDocker.sh
