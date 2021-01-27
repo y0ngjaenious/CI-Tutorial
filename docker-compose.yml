@@ -17,7 +17,7 @@ services:
       context: ./nginx
     image: y0ngjaenious/docker-nginx
     ports: 
-      - "3000:80"
+      - "80:80"
  
   backend:
     build: 
