@@ -37,6 +37,7 @@ services:
         
   mysql:
     build: ./mysql
+    image: y0ngjaenious/docker-mysql
     restart: unless-stopped
     container_name: app_mysql
     ports:
