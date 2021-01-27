@@ -23,7 +23,7 @@ services:
     build: 
       dockerfile: Dockerfile.dev
       context: ./backend
-    image: y0ngjaenious/docker-nginx
+    image: y0ngjaenious/docker-backend
     container_name: app_backend
     volumes:
       - /app/node_modules
