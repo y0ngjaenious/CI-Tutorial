@@ -29,22 +29,22 @@ services:
       - /app/node_modules
       - ./backend:/app
     environment: 
-      MYSQL_HOST: mysql
+      MYSQL_HOST: docker-fullstack-mysql.cubx3nn7qn4q.us-east-1.rds.amazonaws.com
       MYSQL_USER: root 
-      MYSQL_ROOT_PASSWORD: y0ngjae
+      MYSQL_ROOT_PASSWORD: y0ngjae777
       MYSQL_DATABASE: myapp
       MYSQL_PORT: 3306
         
-  mysql:
-    build: ./mysql
-    image: y0ngjaenious/docker-mysql
-    restart: unless-stopped
-    container_name: app_mysql
-    ports:
-      - "3306:3306"
-    volumes:
-      - ./mysql/mysql_data:/var/lib/mysql
-      - ./mysql/sqls/:/docker-entrypoint-initdb.d/
-    environment:
-      MYSQL_ROOT_PASSWORD: y0ngjae
-      MYSQL_DATABASE: myapp
+#   mysql:
+#     build: ./mysql
+#     image: y0ngjaenious/docker-mysql
+#     restart: unless-stopped
+#     container_name: app_mysql
+#     ports:
+#       - "3306:3306"
+#     volumes:
+#       - ./mysql/mysql_data:/var/lib/mysql
+#       - ./mysql/sqls/:/docker-entrypoint-initdb.d/
+#     environment:
+#       MYSQL_ROOT_PASSWORD: y0ngjae
+#       MYSQL_DATABASE: myapp
