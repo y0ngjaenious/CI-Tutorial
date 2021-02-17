@@ -1,5 +1,5 @@
 # docker login
-docker login -u y0ngjaenious -p dy1013778!
+docker login -u y0ngjaenious -p # should enter password
 # pull docker image
 if [ "$DEPLOYMENT_GROUP_NAME" == "dev" ]
 then
